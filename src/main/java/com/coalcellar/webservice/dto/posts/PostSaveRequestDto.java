@@ -1,6 +1,6 @@
-package com.coalcellar.webservice.web;
+package com.coalcellar.webservice.dto.posts;
 
-import com.coalcellar.webservice.webservice.domain.posts.Posts;
+import com.coalcellar.webservice.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.coalcellar.webservice.webservice.domain;
+package com.coalcellar.webservice.domain;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

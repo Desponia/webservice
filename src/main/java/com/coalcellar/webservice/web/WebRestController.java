@@ -1,7 +1,7 @@
 package com.coalcellar.webservice.web;
 
-import com.coalcellar.webservice.webservice.domain.posts.PostsRepository;
-import com.coalcellar.webservice.webservice.service.PostsService;
+import com.coalcellar.webservice.dto.posts.PostSaveRequestDto;
+import com.coalcellar.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,8 +1,8 @@
-package com.coalcellar.webservice.webservice.service;
+package com.coalcellar.webservice.service;
 
-import com.coalcellar.webservice.web.PostSaveRequestDto;
-import com.coalcellar.webservice.webservice.domain.posts.Posts;
-import com.coalcellar.webservice.webservice.domain.posts.PostsRepository;
+import com.coalcellar.webservice.dto.posts.PostSaveRequestDto;
+import com.coalcellar.webservice.domain.posts.Posts;
+import com.coalcellar.webservice.domain.posts.PostsRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

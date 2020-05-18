@@ -1,4 +1,4 @@
-package com.coalcellar.webservice.webservice.domain.posts;
+package com.coalcellar.webservice.domain.posts;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
-package com.coalcellar.webservice.webservice.domain.posts;
+package com.coalcellar.webservice.domain.posts;
 
-import com.coalcellar.webservice.webservice.domain.BaseTimeEntity;
+import com.coalcellar.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
