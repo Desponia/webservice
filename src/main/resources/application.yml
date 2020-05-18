@@ -1,3 +1,5 @@
 spring:
-  profiles:
-    active: local
+#  profiles:
+#    active: prod
+  jpa:
+    show-sql: true
