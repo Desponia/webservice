@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @SpringBootTest
@@ -29,9 +30,23 @@ public class PostsRepositoryTest {
 
 //        then
         Posts posts = postsList.get(0);
-        assert(posts.getTitle()).equals("테스트 게시 타이틀");
-        assert(posts.getContent()).equals("테스트 컨텐츠다");
-        assert(posts.getAuthor()).equals("Desponia");
+        assert (posts.getTitle()).equals("테스트 게시 타이틀");
+        assert (posts.getContent()).equals("테스트 컨텐츠다");
+        assert (posts.getAuthor()).equals("Desponia");
     }
 
+    @Test
+    public void BaseTimeEntity_등록() {
+//        given
+        LocalDateTime now = LocalDateTime.now();
+        postsRepository.save(Posts.builder().title("Title.....").content("Content~~~").author("Desponia~~~~").build());
+
+//        when
+        List<Posts> postList = postsRepository.findAll();
+
+//        then
+        Posts post = postList.get(0);
+        assert (post.getCreatedDate()).isAfter(now);
+        assert (post.getModifiedDate()).isAfter(now);
+    }
 }

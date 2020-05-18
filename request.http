@@ -1,3 +1,5 @@
 GET localhost:8080/hello
 
 ###
+
+POST localhost:8080/
