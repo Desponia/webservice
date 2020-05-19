@@ -17,7 +17,7 @@ public class WebControllerTest {
 //        when
         String body = this.restTemplate.getForObject("/", String.class);
 
-        assert (body.contains("스프링부트로 시작하는 웹 서비스"));
+        assert (body.contains("Boot, ec2, S3, CodeDeploy, Travis CI 와 함께하는 게시판 놀이"));
     }
 
 }
